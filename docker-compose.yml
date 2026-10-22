@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web-shop:
+    build: .
+    container_name: demo_shop_container
+    ports:
+      - "8080:80" # Ánh xạ cổng 8080 trên máy thật vào cổng 80 của Container
+    restart: always
